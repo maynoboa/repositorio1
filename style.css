@@ -1,0 +1,29 @@
+body {
+    background: #151515;
+  }
+  
+  h1 {
+    font-family: 'Arial';
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    color: #FF8000;
+    width: 100%;
+    margin-bottom: 0.3em;
+    text-shadow: -1px -1px 3px #E6E6E6;
+    position: center;
+    padding-top: 25px;
+    padding-left: 50px;
+  }
+  
+  .animacion {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dash 3s linear forwards infinite alternate;
+    -webkit-animation: dash 3s linear forwards infinite alternate;
+  }
+  
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
